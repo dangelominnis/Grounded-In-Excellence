@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grounded In Excellence</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
+
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="u-centered">
+            <div class="header-textbox">
+                <div class="header-textbox-info">
+                    <h1>Join The Movement</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint pariatur, provident alias quo saepe!</p>
+                    <a class="btn-primary">Join Now</a>
+                </div>
+                <div class="header-textbox-image">
+                    <img src="Grounded Img-01 3.png" alt="header image">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <img class="bar__logo" src="grounded-in-excellence-logo-01.png" alt="logo image">
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">list</i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="#">Home</a>
+                <a class="nav__link" href="#">About</a>
+                <a class="nav__link" href="#">Services</a>
+                <a href="#" class="btn-primary">Register Now</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 0.9)
+            }, {
+                threshold: 0.9
+            });
+            
+            observer.observe(document.querySelector(".header"));
+        });
+        </script>
+
+        <!-- Intro Section -->
+        <section class="intro">
+            <div class="container">
+                <div class="intro-box">
+                    <h2>To Create Great Change, We Must Educate.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum unde cum ab est sequi, in aperiam suscipit eius ipsam ratione repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum unde cum ab est sequi, in aperiam suscipit eius ipsam ratione repellendus.</p>
+                    <div class="intro-button">
+                        <a href="#" class="btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section class="events">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                <h4>Stay Up To Date With All Of Our Latest Events</h4>
+                <div class="events-box">
+                    <div class="events-card">
+                        <div class="events-card-image">
+                            <img src="mura-orig_orig.jpg" alt="">
+                        </div>
+                        <div class="events-card-text">
+                            <h3>Diversity</h3>
+                            <h4>February 24th, 8:00PM</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, velit.</p>
+                            <a href="#" class="btn-primary">View Event</a>
+                        </div>
+                    </div>
+                    <div class="events-card">
+                        <div class="events-card-image">
+                            <img src="group_orig.jpg" alt="">
+                        </div>
+                        <div class="events-card-text">
+                            <h3>Equity</h3>
+                            <h4>February 24th, 8:00PM</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, velit.</p>
+                            <a href="#" class="btn-primary">View Event</a>
+                        </div>
+                    </div>
+                    <div class="events-card">
+                        <div class="events-card-image">
+                            <img src="outreach_orig.jpg" alt="">
+                        </div>
+                        <div class="events-card-text">
+                            <h3>Inclusion</h3>
+                            <h4>February 24th, 8:00PM</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, velit.</p>
+                            <a href="#" class="btn-primary">View Event</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Section -->
+        <section class="banner">
+            <div class="container">
+                <div class="banner-box">
+                    <div class="banner-text">
+                        <h3>Make a difference today</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, eum.</p>
+                    </div>
+                    <div class="banner-button">
+                        <a href="#" class="btn-primary">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partner Section -->
+        <section class="partner">
+            <div class="container">
+                <h2>Proud Partners Of Grounded In Excellence</h2>
+                <div class="partner-box">
+                    <div class="partner-item">
+                        <img src="Social Change Logos-01.png" alt="">
+                    </div>
+                    <div class="partner-item">
+                        <img src="Social Change Logos-02.png" alt="">
+                    </div>
+                    <div class="partner-item">
+                        <img src="Social Change Logos-01.png" alt="">
+                    </div>
+                    <div class="partner-item">
+                        <img src="Social Change Logos-02.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="container">
+                <h2>Meet The Team</h2>
+                <h4>Get To Know What <span>Grounded In Excellence</span> Is All About</h4>
+                <div class="about-box">
+                    <div class="about-card">
+                        <div class="about-image">
+                            <img src="img7.jpg" alt="">
+                        </div>
+                        <div class="about-text">
+                            <h4>Owner</h4>
+                            <h3>Dar’Nesha Weary</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, sit.</p>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-image">
+                            <img src="img7.jpg" alt="">
+                        </div>
+                        <div class="about-text">
+                            <h4>Founder</h4>
+                            <h3>Dar’Nesha Weary</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, sit.</p>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-image">
+                            <img src="img7.jpg" alt="">
+                        </div>
+                        <div class="about-text">
+                            <h4>Owner</h4>
+                            <h3>Dar’Nesha Weary</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, sit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-box">
+                    <h2>Subscribe To Our Newsletter</h2>
+                    <p>Catch up on the latest news happening around our community.</p>
+                    <a href="#" class="btn-primary">Subscribe</a>
+                </div>
+            </div>
+        </section>
+
+<!-- Contact Section -->
+<section class="contact" id="Contact">
+    <div class="container">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h2>Contact Our Team</h2>
+                <h4>We'd love to chat with you!</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi saepe accusamus consequuntur accusantium aliquam repellendus pariatur, tempora voluptatibus facere. Consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi saepe accusamus consequuntur accusantium aliquam repellendus pariatur, tempora voluptatibus facere. Consectetur.</p>
+            </div>
+            <div class="contact-box">
+                <form action="">
+                    <div class="contact-box1">
+                        <div class="contact-box1-item">
+                            <h5>First Name*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box2">
+                        <div class="contact-box2-item">
+                            <h5>Phone Number*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                        <div class="contact-box2-item">
+                            <h5>Email*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box3">
+                        <div class="contact-box3-item">
+                            <h5>Message*</h5>
+                            <textarea name="Message" id="" cols="30" rows="10" required></textarea>
+                        </div>
+                    </div>
+                    <div class="contact-box-submit">
+                        <div class="contact-button">
+                            <a href="#" class="btn-primary">Submit</a>
+                        </div>
+                        <!-- <input type="submit" value="" class="btn-primary"> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section class="footer" id="Footer">
+    <div class="container">
+        <div class="footer-box">
+            <div class="footer-box-company">
+                <img src="grounded-in-excellence-logo-01.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis culpa mollitia in illum, fuga similique est numquam, provident molestias cupiditate a. Itaque a accusantium ad dolores iusto corrupti tempora placeat, consequatur modi adipisci nobis exercitationem autem harum amet accusamus quia beatae officia, nulla ea culpa! Consectetur minima rem cupiditate ipsam.</p>
+                <p>Copyright © 2021 Grounded In Excellence - All rights reserved.</p>
+            </div>
+            <div class="footer-box-links">
+                <h3>Site Map</h3>
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Services</li></a>
+                    
+                </ul>
+            </div>
+            <div class="footer-box-socials">
+                <h3>Social Media</h3>
+                <a href="#"><li><i class="fab fa-instagram"></i></li></a>
+                <a href="#"><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+            </div>
+            <div class="footer-box-development">
+                <h3>Contact Info</h3>
+                <a href="tel:111-222-3333"><li>(111) 222 - 3333</li></a>
+                <a href="mailto:#"><li>info@info.com</li></a>
+                <a href="#"><li>Developed By Logo Genius</li></a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+</body>
+</html>
