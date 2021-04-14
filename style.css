@@ -45,7 +45,7 @@ body {
 h1 {
     font-size: 4rem;
     font-weight: 600;
-    color: var(--color-black);
+    color: var(--color-dark-grey);
     letter-spacing: 1px;
     line-height: 1.6;
     font-family: 'Staatliches', cursive;
@@ -56,7 +56,7 @@ h1 {
 h2 {
     font-size: 3rem;
     font-weight: 600;
-    color: var(--color-black);
+    color: var(--color-dark-grey);
     letter-spacing: 1px;
     line-height: 1.6;
     text-transform: uppercase;
@@ -86,8 +86,8 @@ h4 {
 
 p {
     font-size: 1rem;
-    font-weight: 200;
-    color: var(--color-dark-grey);
+    font-weight: 300;
+    color: #777;
     letter-spacing: 1px;
     line-height: 1.6;
     margin-bottom: 2rem;
@@ -101,7 +101,7 @@ li {
     list-style: none;
 }
 
-/* ******************************************************** START OF HEADER SECTION ************************************************************ */
+/* ******************************************************** START OF HEADER SECTION ***************************************************** */
 /* Header Section */
 .header {
     height: 100vh;
@@ -257,9 +257,9 @@ li {
     }
 }
 
-/* ******************************************************** END OF HEADER SECTION ************************************************************ */
+/* ******************************************************** END OF HEADER SECTION **************************************************** */
 
-/* ******************************************************** HOME PAGE ************************************************************ */
+/* ******************************************************** HOME PAGE **************************************************************** */
 /* Intro Section */
 .intro {
     padding: 6rem 0;
@@ -417,82 +417,79 @@ li {
     color: var(--color-black);
 }
 
-/* About Section */
-.about {
+/* People Section */
+.people {
     padding: 6rem 0;
-    background: var(--color-white);
+    background-color: var(--color-white);
 }
 
-.about h2 {
+.people h2 {
     text-align: center;
     margin-bottom: -1rem;
 }
 
-.about h4 {
+.people h4 {
     text-align: center;
     color: var(--color-dark-grey);
     font-weight: 500;
     text-transform: none;
 }
 
-.about-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2rem;
-}
-
-.about-card {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    width: 16rem;
-    height: 23rem;
-    background: #333;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    padding: 2rem;
-    margin: 2rem;
-    transition: .3s all;
-}
-
-.about-card:hover {
-    transform: scale(1.1);
-}
-
-.about-image img{
-    height: auto;
-    width: 12rem;
-    border-radius: 10rem;
-}
-
-.about-text {
+.people p {
     text-align: center;
 }
 
-.about-text h3 {
+.people-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.people-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.people-item h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--color-primary);
-    margin-bottom: 1rem;
+    color: var(--color-black);
+    margin-bottom: -.5rem;
+    text-align: center;
 }
 
-.about-text h4 {
+.people-item p {
     font-size: 1rem;
-    font-weight: 400;
-    color: var(--color-white);
+    font-weight: 300;
+    color: var(--color-secondary);
     margin-bottom: -1rem;
-    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
 }
 
-.about-text p {
-    font-size: .75rem;
-    font-weight: 400;
-    color: var(--color-white);
-    margin-bottom: 2rem;
-    
+.people-image {
+    border: 5px solid var(--color-secondary);
+    padding: .5rem;
+    border-radius: 15rem;
+    transition: .3s all;
 }
+
+.people-image:hover {
+    transform: scale(1.1);
+    border: 5px solid var(--color-black);
+}
+
+.people-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 15rem;
+}
+
 
 /* Newsletter */
 .newsletter {
@@ -532,6 +529,209 @@ li {
     font-weight: 500;
 }
 
+/* ******************************************************** ABOUT PAGE ********************************************************** */
+/* About Section */
+.about {
+    padding: 8rem 0;
+    background-color: var(--color-light-grey);
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: -1rem;
+}
+
+.about h4 {
+    text-align: center;
+    text-transform: none;
+    color: var(--color-primary);
+
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.about-box {
+    margin: 2rem;
+    /* flex: 1; */
+}
+
+.about-text {
+
+}
+
+.about-title h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-dark-grey);
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: .75rem;
+    font-weight: 200;
+    color: var(--color-dark-grey);
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+.about-button {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Facts Section */
+.facts {
+    padding: 6rem 0;
+    background-color: var(--color-white);
+}
+
+.facts-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.facts-box h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-dark-grey);
+
+}
+
+.facts-box ul li {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    color: var(--color-dark-grey);
+}
+
+.facts-box a {
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: .3s all;
+}
+
+.facts-box a:hover {
+    color: var(--color-dark-grey);
+}
+
+
+.facts-box1 {
+    flex: 1;
+    padding: 0 2rem;
+}
+
+
+.facts-box2 {
+    flex: 1;
+    padding: 0 2rem;
+}
+
+/* King 5 Video */
+.video {
+    padding: 4rem 0;
+    background-color: var(--color-light-grey);
+}
+
+.video h2 {
+    text-align: center;
+}
+
+.video-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+/* ******************************************************** SERVICES PAGE ********************************************************** */
+/* Services Card Section */
+.services {
+    padding: 6rem 0;
+    background-color: var(--color-light-grey);
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: -1rem;
+}
+
+.services h4 {
+    text-align: center;
+    color: var(--color-primary);
+    font-weight: 500;
+    text-transform: none;
+}
+
+.services-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.services-card {
+    justify-content: center;
+    align-items: center;
+    width: 22rem;
+    height: 32rem;
+    margin: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    transition: .3s all;
+}
+
+.services-card:hover {
+    transform: scale(1.1);
+}
+
+.services-card-image img {
+    width: 100%;
+    height: 200px;
+}
+
+.services-card-text {
+    padding: 0 2rem;
+}
+
+.services-card-text h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-dark-grey);
+}
+
+.services-card-text h4 {
+    color: var(--color-dark-grey);
+}
+
+.services-card-text p {
+    font-size: .85rem;
+}
+
+.services-card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* ******************************************************** CONTACT SECTION ***************************************************** */
 /* Contact Section */
 .contact {
@@ -553,7 +753,7 @@ li {
 }
 
 .contact h2 {
-    color: var(--color-black);
+    color: var(--color-dark-grey);
     margin-bottom: .5rem;
 }
 
@@ -688,6 +888,10 @@ li {
     text-transform: uppercase;
 }
 
+.footer-box-links ul {
+    padding-left: 0rem;
+}
+
 .footer-box-links li {
     font-size: .75rem;
     font-weight: 300;
@@ -738,7 +942,6 @@ li {
     line-height: 1.6;
     text-align: center;
     list-style: none;
-    /* margin: 1rem 0; */
 }
 
 .footer-box-socials i {
@@ -747,7 +950,6 @@ li {
     letter-spacing: 1px;
     line-height: 1.6;
     text-align: center;
-    /* margin: 1rem 0; */
 }
 
 .footer-box-socials i:hover {
@@ -896,11 +1098,6 @@ li {
 
     .banner-button {
         padding-bottom: 2.5rem;
-    }
-
-    /* About Section */
-    .about-card {
-        height: 26rem;
     }
 
     /* Newsletter Section */
