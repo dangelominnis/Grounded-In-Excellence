@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 :root {
     --bar-height: 100px;
     --color-primary: #fbb433;
@@ -99,6 +103,16 @@ a {
 
 li {
     list-style: none;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+    padding: 0 1rem;
+}
+
+.padding-top {
+    padding-top: 4rem;
 }
 
 /* ******************************************************** START OF HEADER SECTION ***************************************************** */
@@ -260,6 +274,22 @@ li {
 /* ******************************************************** END OF HEADER SECTION **************************************************** */
 
 /* ******************************************************** HOME PAGE **************************************************************** */
+/* Covid Banner */
+.covid {
+    background-color: var(--color-primary);
+}
+
+.covid h4 {
+    font-size: .75rem;
+    font-weight: 400;
+    color: var(--color-white);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .5rem;
+    margin-bottom: 0rem;
+}
+
 /* Intro Section */
 .intro {
     padding: 6rem 0;
@@ -273,6 +303,8 @@ li {
 
 .intro-box p {
     margin-bottom: 3rem;
+    padding: 0 10rem;
+    text-align: justify;
 }
 
 .intro-button {
@@ -292,9 +324,10 @@ li {
 
 .events h4 {
     text-align: center;
-    color: var(--color-dark-grey);
+    color: var(--color-secondary);
+    font-size: 1rem;
     font-weight: 500;
-    text-transform: none;
+    text-transform: uppercase;
 }
 
 .events-box {
@@ -424,19 +457,20 @@ li {
 }
 
 .people h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: -1rem;
 }
 
 .people h4 {
-    text-align: center;
-    color: var(--color-dark-grey);
+    text-align: left;
+    color: var(--color-secondary);
+    font-size: 1rem;
     font-weight: 500;
-    text-transform: none;
+    text-transform: uppercase;
 }
 
 .people p {
-    text-align: center;
+    text-align: justify;
 }
 
 .people-box {
@@ -445,38 +479,12 @@ li {
     align-items: center;
 }
 
-.people-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    margin: 2rem;
-    padding: 2rem;
-}
-
-.people-item h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--color-black);
-    margin-bottom: -.5rem;
-    text-align: center;
-}
-
-.people-item p {
-    font-size: 1rem;
-    font-weight: 300;
-    color: var(--color-secondary);
-    margin-bottom: -1rem;
-    font-style: italic;
-    text-align: center;
-}
-
 .people-image {
     border: 5px solid var(--color-secondary);
-    padding: .5rem;
-    border-radius: 15rem;
+    padding: 1rem;
+    border-radius: 30px;
     transition: .3s all;
+    margin: 0 2rem;
 }
 
 .people-image:hover {
@@ -485,9 +493,13 @@ li {
 }
 
 .people-image img {
-    width: 400px;
+    width: 300px;
     height: auto;
-    border-radius: 15rem;
+    border-radius: 20px;
+}
+
+.people-text {
+    margin: 0 2rem;
 }
 
 
@@ -532,7 +544,7 @@ li {
 /* ******************************************************** ABOUT PAGE ********************************************************** */
 /* About Section */
 .about {
-    padding: 8rem 0;
+    padding: 6rem 0;
     background-color: var(--color-light-grey);
 }
 
@@ -543,8 +555,10 @@ li {
 
 .about h4 {
     text-align: center;
-    text-transform: none;
-    color: var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
 
 }
 
@@ -664,7 +678,7 @@ li {
 /* ******************************************************** SERVICES PAGE ********************************************************** */
 /* Services Card Section */
 .services {
-    padding: 6rem 0;
+    padding: 4rem 0 6rem 0;
     background-color: var(--color-light-grey);
 }
 
@@ -675,9 +689,10 @@ li {
 
 .services h4 {
     text-align: center;
-    color: var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 1rem;
     font-weight: 500;
-    text-transform: none;
+    text-transform: uppercase;
 }
 
 .services-box {
@@ -685,15 +700,15 @@ li {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .services-card {
     justify-content: center;
     align-items: center;
-    width: 22rem;
-    height: 32rem;
-    margin: 2rem;
+    width: 24rem;
+    height: 54rem;
+    margin: 2rem 1rem;
     border-radius: 10px;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
     transition: .3s all;
@@ -705,21 +720,32 @@ li {
 
 .services-card-image img {
     width: 100%;
-    height: 200px;
+    height: auto;
 }
 
 .services-card-text {
     padding: 0 2rem;
 }
 
+
 .services-card-text h3 {
     font-size: 2rem;
     font-weight: 600;
     color: var(--color-dark-grey);
+    margin-bottom: 1rem;
 }
 
 .services-card-text h4 {
     color: var(--color-dark-grey);
+    font-style: italic;
+}
+
+.services-card-text h5 {
+    font-size: .75rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
 }
 
 .services-card-text p {
@@ -754,12 +780,15 @@ li {
 
 .contact h2 {
     color: var(--color-dark-grey);
-    margin-bottom: .5rem;
+    margin-bottom: -1rem;
 }
 
 .contact h4 {
+    text-align: center;
+    color: var(--color-secondary);
     font-size: 1rem;
-    color: var(--color-dark-grey);
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .contact-container {
@@ -867,7 +896,7 @@ li {
 .footer-box-company p {
     font-size: .75rem;
     color: var(--color-grey-dark-1);
-    text-align: left;
+    text-align: justify;
     margin: 2rem 0;
 }
 
@@ -886,10 +915,6 @@ li {
     color: var(--color-dark-grey);
     text-align: center;
     text-transform: uppercase;
-}
-
-.footer-box-links ul {
-    padding-left: 0rem;
 }
 
 .footer-box-links li {
@@ -942,6 +967,8 @@ li {
     line-height: 1.6;
     text-align: center;
     list-style: none;
+    padding: none;
+    margin-top: -2rem;
 }
 
 .footer-box-socials i {
@@ -950,6 +977,7 @@ li {
     letter-spacing: 1px;
     line-height: 1.6;
     text-align: center;
+    padding: 1.5rem 0;
 }
 
 .footer-box-socials i:hover {
@@ -1044,20 +1072,132 @@ li {
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
+    
+    /* Header Section */
+    .nav__link {
+        color: var(--color-white);
+    }
+
+    /* Partner Section */
+    .partner-item {
+        margin: 2rem;
+    }
+
+    /* People Section */
+    /* .people-box {
+        display: inline-block;
+    } */
+    .people-image {
+        flex: 1;
+    }
+
+    .people-text {
+        flex: 3;
+    }
+
+    .people p {
+        text-align: left;
+    }
+
+    .people-image img {
+        width: 200px;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        display: inline;
+    }
+
+    .contact-text {
+        text-align: left;
+        padding: 0 1rem;
+    }
+
+    .contact-text h2 {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .contact-box1-item .input {
+        width: 20rem;
+        height: 3rem;
+    }
+
+    .contact-box2-item .input {
+        width: 8rem;
+        height: 3rem;
+    }
+
+    .contact-box3-item textarea {
+        width: 20rem;
+        height: 8rem;
+    }
+
+    .contact-button {
+        padding: 1rem;
+    }
+
+    /* Footer Section */
+    .footer-box {
+        display: inline;
+    }
+
+    .footer-box-company {
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-box-company p {
+        margin-bottom: 2rem;
+        margin-top: 0rem;
+    }
+
+    .footer-box-company img {
+        margin-bottom: 2rem;
+    }
+
+    .footer-box-links {
+        margin-bottom: 2rem;
+    }
+
+    .footer-box-links h3 {
+        margin-bottom: 1rem;
+    }
+
+    .footer-box-socials {
+        margin-bottom: 2rem;
+    }
+
+    .footer-box-socials h3 {
+        margin-bottom: 1rem;
+    }
+
+    .footer-box-development {
+        margin-bottom: 2rem;
+    }
+
+    .footer-box-development h3 {
+        margin-bottom: 1rem;
+    }
+
+
 
 }
 
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    /* Container */
-    /* .container {
-        padding: 0 1rem;
-    } */
-
+    
     h1 {
         font-size: 4rem;
         text-align: center;
+    }
+
+    p {
+        text-align: left;
     }
 
     /* Header Section */
@@ -1077,6 +1217,11 @@ li {
         height: auto;
     }
 
+    .header-textbox-info p {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
     .nav__link {
         color: var(--color-white);
     }
@@ -1091,6 +1236,35 @@ li {
         margin-bottom: 6rem;
     }
 
+    .intro-box p {
+        padding: 0 1rem;
+        text-align: left;
+    }
+
+    /* People Section */
+    .people-box {
+        display: inline-block;
+    }
+
+    .people-item {
+        flex: none;
+    }
+
+    /* About Section */
+    .about-container {
+        display: inline-block;
+        margin: 0rem;
+    }
+
+    /* Facts Section */
+    .facts-box1, .facts-box2 {
+        padding: 0rem;
+    }
+
+    .facts-box h3 {
+        text-align: center;
+    }
+
     /* Banner Section */
     .banner-box {
         display: inline;
@@ -1098,6 +1272,11 @@ li {
 
     .banner-button {
         padding-bottom: 2.5rem;
+    }
+
+    /* Services Section */
+    .height {
+        height: 59rem;
     }
 
     /* Newsletter Section */
